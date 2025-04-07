@@ -1,13 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Carousel, Container, Card, Row, Col } from 'react-bootstrap';
 import CustomNavbar from './components/Navbar';
 import './App.css';
-import React from 'react';
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
-
-  const baseUrl = "https://YoryiNin.github.io/Universidad"; // Reemplaza por tu dominio correcto
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -19,7 +16,7 @@ function App() {
             <div className="carousel-image-container">
               <img  
                 className="d-block w-100"
-                src={`${baseUrl}/images/campuss.png`} // Ruta absoluta
+                src="https://github.com/YoryiNin/Universidad/blob/main/public/images/campuss.PNG?raw=true"
                 alt="Campus universitario"
               />
               <Carousel.Caption 
@@ -42,19 +39,19 @@ function App() {
               {
                 id: 1,
                 title: "Psicólogas destacan abordaje en pacientes oncológicos",
-                image: "negra.jpg",
+                image: "https://github.com/YoryiNin/Universidad/blob/main/public/images/negra.jpg?raw=true",
                 content: "Profesionales de la USD revolucionan el enfoque terapéutico en cáncer..."
               },
               {
                 id: 2,
                 title: "Presentan resultados del proyecto ResAgro-Sargazo",
-                image: "otras.webp", 
+                image: "https://github.com/YoryiNin/Universidad/blob/main/public/images/otras.webp?raw=true",
                 content: "Presentan resultados del proyecto ResAgro-Sargazo durante evento internacional en la isla de Guadalupe"
               },
               {
                 id: 3,
                 title: "CONADIS realiza primer Foro",
-                image: "otro.webp",
+                image: "https://github.com/YoryiNin/Universidad/blob/main/public/images/otro.webp?raw=true",
                 content: "CONADIS realiza primer Foro Nacional sobre aplicación de la Ley 34-23 del Espectro Autista"
               }
             ].map((item) => (
@@ -62,7 +59,7 @@ function App() {
                 <Card className="h-100 shadow-sm news-card">
                   <Card.Img 
                     variant="top" 
-                    src={`${baseUrl}/images/${item.image}`} // Ruta absoluta
+                    src={item.image}
                     className="card-image"
                     alt={`Noticia ${item.title}`}
                   />
