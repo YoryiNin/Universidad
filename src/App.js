@@ -21,11 +21,9 @@ function App() {
           <Carousel.Item interval={3000}>
             <div className="carousel-image-container">
     
-              <img  
-                className="d-block w-100"
-                src="/images/campuss.png"
-                alt="Campus universitario"
-              />  
+            <img src="https://YoryiNin.github.io/Universidad/images/campuss.png" 
+            alt="Imagen campus" />
+
 
               
               <Carousel.Caption 
