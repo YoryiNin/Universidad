@@ -6,7 +6,7 @@ const Registro = () => {
     <div className="registro-container">
       <header>
         {/* Actualizando la ruta de la imagen para usar la URL de GitHub */}
-        <img src="https://github.com/YoryiNin/Universidad/blob/main/public/images/campuss.PNG?raw=true" alt="Logo" className="logo" />
+        <img src="https://github.com/YoryiNin/Universidad/blob/main/public/images/logo.png?raw=true" />
         <h1 className="fade-in">Formulario de registro</h1>
       </header>
 
