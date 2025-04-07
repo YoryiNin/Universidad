@@ -1,0 +1,388 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.oscuro {
+  background-color: #121212;
+  color: #030303;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  color: #ff4d4d;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease;
+}
+
+body.oscuro header {
+  background: #1a1a1a;
+}
+
+.logo {
+  padding: 5px 0;
+}
+
+.logo2 {
+  height: 80px;
+}
+
+/* Logo pequeño al lado izquierdo del menú */
+.logo-pequeno {
+  height: 40px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.logo-pequeno:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff4d4d;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff4d4d;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: rgb(233, 14, 14);
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu button:hover {
+  transform: scale(1.1);
+}
+
+body.oscuro .menu a {
+  color: #f0f0f0;
+}
+
+/* Hero */
+.hero {
+  background: #eee2e3;
+  color: white;
+  padding: 50px 20px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+body.oscuro .hero {
+  background: #1f1f1f;
+}
+
+/* Animación título */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1 {
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+  color: red;
+}
+
+.hero-content h1.active {
+  opacity: 1;
+}
+
+/* Botón modo oscuro */
+#modoOscuroBtn.rotate {
+  animation: rotateMoon 0.3s ease-in-out forwards;
+}
+
+@keyframes rotateMoon {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Call to Action */
+.call-to-action {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+body.oscuro .call-to-action {
+  background-color: #1c1c2c;
+}
+
+.cta-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.cta-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.cta-box:hover {
+  transform: translateY(-5px);
+}
+
+.cta-box h2 {
+  color: #ff4d4d;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.cta-box p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: 2px solid #ff4d4d;
+  padding: 14px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: transparent;
+  color: #ff4d4d;
+}
+
+body.oscuro .cta-box {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.oscuro .cta-box h2 {
+  color: #ff4d4d;
+}
+
+body.oscuro .cta-box p {
+  color: #ccc;
+}
+
+body.oscuro .cta-button {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ff4d4d;
+}
+
+body.oscuro .cta-button:hover {
+  background-color:#ff4d4d;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background: none !important;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* HERO contenido */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto 1.5rem;
+  max-width: 1000px;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.hero-subtitle {
+  position: relative;
+  font-size: 1.2rem;
+  padding-left: 25px;
+  color: #ff4d4d !important;
+  margin-top: 10px;
+}
+
+.hero-subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 2px;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+.hero-description {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #ff4d4d !important;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(255, 77, 77, 0.2);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+  transition-delay: 0.4s;
+}
+
+.hero-description.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Imagen destacada */
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ff4d4d;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+body.oscuro .hero-image {
+  border-color: #ff6666;
+  box-shadow: 0 4px 15px rgba(255, 102, 102, 0.3);
+}
+
+body.oscuro .hero-subtitle {
+  color: #ff6666 !important;
+}
+
+body.oscuro .hero-subtitle::before {
+  background: #ff6666;
+}
+
+body.oscuro .hero-description {
+  color: #ff6666 !important;
+  text-shadow: 0 2px 4px rgba(255, 102, 102, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .logo-pequeno {
+    display: none;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text-container {
+    align-items: center;
+  }
+
+  .hero-subtitle {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero-subtitle::before {
+    display: none;
+  }
+
+  .hero-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer h5 {
+    font-size: 1.1rem;
+  }
+
+  footer p,
+  footer li {
+    font-size: 0.9rem;
+  }
+}

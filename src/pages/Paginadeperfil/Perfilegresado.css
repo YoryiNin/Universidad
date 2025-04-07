@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+  color: #000;
+}
+
+header {
+  background: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero {
+  background-color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.hero-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero-text .btn {
+  background: red;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background: #ff4c4c;
+}
+
+/* Animación para el texto */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.features,
+.gallery,
+.mission-vision {
+  padding: 2rem;
+}
+
+.feature-list,
+.gallery-grid,
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  background: red;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.img-placeholder {
+  height: 180px;
+  background-color: #ccc;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #ac3a3a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #cc2323;
+  color: white;
+}
