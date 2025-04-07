@@ -120,7 +120,7 @@ const EmpleosIngenieria = () => {
       <Row>
         <Col md={12}>
           <img 
-            src="/images/logo.png" 
+            src="https://github.com/YoryiNin/Universidad/blob/main/public/images/logo.png?raw=true"
             alt="Imagen de Empleos" 
             className="d-block mx-auto mb-4" 
           />

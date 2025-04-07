@@ -29,7 +29,7 @@ const Perfilegresado = () => {
         <div className="feature-list">
           <div className="card">
             <img 
-              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/conexiones.jpg?raw=true" 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/conexiones.JPG?raw=true" 
               alt="Conexiones" 
               className="card-img" 
             />
@@ -40,7 +40,7 @@ const Perfilegresado = () => {
           </div>
           <div className="card">
             <img 
-              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/eventos.jpg?raw=true" 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/eventos.JPG?raw=true" 
               alt="Eventos" 
               className="card-img" 
             />
@@ -51,7 +51,7 @@ const Perfilegresado = () => {
           </div>
           <div className="card">
             <img 
-              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/descuentos.jpg?raw=true" 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/descuentos.JPG?raw=true" 
               alt="Beneficios" 
               className="card-img" 
             />
@@ -92,7 +92,8 @@ const Perfilegresado = () => {
         <div className="gallery-grid">
           <div className="card">
             <img 
-              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/ceremonia.jpg?raw=true" 
+              src=" https://github.com/YoryiNin/Universidad/blob/main/public/images/ceremonia.JPG?raw=true" 
+             
               alt="Ceremonia" 
               className="card-img" 
             />
@@ -103,7 +104,7 @@ const Perfilegresado = () => {
           </div>
           <div className="card">
             <img 
-              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/feria.jpg?raw=true" 
+              src="https://raw.githubusercontent.com/YoryiNin/Universidad/refs/heads/main/public/images/feria.JPG" 
               alt="Feria de empleos" 
               className="card-img" 
             />
@@ -114,7 +115,7 @@ const Perfilegresado = () => {
           </div>
           <div className="card">
             <img 
-              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/networking.jpg?raw=true" 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/networking.JPG?raw=true"    
               alt="Networking" 
               className="card-img" 
             />

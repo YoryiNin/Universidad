@@ -56,7 +56,7 @@ const EgresadosDestacados = () => {
           </div>
           {/* Imagen con la ruta actualizada desde GitHub */}
           <img 
-            src="https://github.com/YoryiNin/Universidad/blob/main/public/images/campuss.PNG?raw=true" 
+            src="https://github.com/YoryiNin/Universidad/blob/main/public/images/egresados-icono.PNG?raw=true" 
             alt="Icono egresados destacados" 
             className="hero-image"
           />
