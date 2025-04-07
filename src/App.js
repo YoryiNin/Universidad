@@ -4,13 +4,10 @@ import CustomNavbar from './components/Navbar';
 import './App.css';
 import React from 'react';
 
-// ❌ Evitar importar App dentro de sí mismo
-// import Home from './App'; 
-// ✅ Puedes importar esta página si planeas mostrarla desde un router, pero no aquí directamente
-// import EngineeringJobs from './pages/EngineeringJobs/EngineeringJobs/EmpleosIngenieria';
-
 function App() {
   const [isHovered, setIsHovered] = useState(false);
+
+  const baseUrl = "https://YoryiNin.github.io/Universidad"; // Reemplaza por tu dominio correcto
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -22,7 +19,7 @@ function App() {
             <div className="carousel-image-container">
               <img  
                 className="d-block w-100"
-                src="/images/campuss.png"
+                src={`${baseUrl}/images/campuss.png`} // Ruta absoluta
                 alt="Campus universitario"
               />
               <Carousel.Caption 
@@ -65,7 +62,7 @@ function App() {
                 <Card className="h-100 shadow-sm news-card">
                   <Card.Img 
                     variant="top" 
-                    src={`/images/${item.image}`}
+                    src={`${baseUrl}/images/${item.image}`} // Ruta absoluta
                     className="card-image"
                     alt={`Noticia ${item.title}`}
                   />
@@ -120,3 +117,4 @@ function App() {
 }
 
 export default App;
+
