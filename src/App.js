@@ -22,7 +22,8 @@ function App() {
             <div className="carousel-image-container">
               <img  
                 className="d-block w-100"
-                src="/images/campuss.png"
+             <img src="https://YoryiNin.github.io/Universidad/images/campuss.png" alt="Imagen campus" />
+
                 alt="Campus universitario"
               />
               <Carousel.Caption 
