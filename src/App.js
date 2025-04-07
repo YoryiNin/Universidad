@@ -24,8 +24,7 @@ function App() {
                 className="d-block w-100"
              <img src="https://YoryiNin.github.io/Universidad/images/campuss.png" alt="Imagen campus" />
 
-                alt="Campus universitario"
-              />
+              
               <Carousel.Caption 
                 className={`carousel-caption-custom ${isHovered ? 'hover-effect' : ''}`}
                 onMouseEnter={() => setIsHovered(true)}
