@@ -1,38 +1,378 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Estilos básicos para el cuerpo */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos para el carrusel */
+.carousel-item {
+  max-height: 60vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Estilos para las tarjetas de noticias */
+.card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: auto;
+  background: none !important; 
+  padding: 2rem 0;
+}
+
+/*-------------------------------------------------------------------*/
+/* Cambia el color al hacer hover en los enlaces del navbar */
+/* Estilos generales del navbar */
+.nav-link-custom {
+  background: none !important; 
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Efecto hover y subrayado */
+.nav-link-custom:hover {
+  color: #ff4d4d !important;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff4d4d;
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+/* Dropdown principal */
+.dropdown-menu-custom {
+  min-width: 250px;
+  margin-top: 5px !important;
+}
+
+/* Subdropdown Empleos */
+.subdropdown-menu {
+  position: absolute !important;
+  left: 100% !important;
+  top: 0 !important;
+  margin-left: 0.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Mostrar subdropdown al hacer hover */
+.dropdown-menu-custom .dropdown:hover .subdropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Efecto hover para items */
+.hover-red:hover {
+  background-color: #ffe5e5 !important;
+  color: #ff4d4d !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .subdropdown-menu {
+    position: static !important;
+    margin-left: 1.5rem;
+    border-left: 2px solid #ff4d4d;
+    opacity: 1;
+    visibility: visible;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .dropdown-menu-custom {
+    margin-top: 0 !important;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* Estilos del Carrusel */
+.carousel-image-container {
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.carousel-title {
+  color: #ff4d4d;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-subtitle {
+    font-size: 1rem;
+  }
+  
+  .carousel-caption-custom {
+    padding: 1rem;
+    bottom: 30% !important;
+  }
+}
+/*--------------------------------------------------------------*/
+
+/* Animación de entrada */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de salida */
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.animate-entrance {
+  animation: slideIn 1s ease-out forwards;
+}
+
+.carousel-caption-custom.hover-effect .animate-entrance {
+  animation: slideOut 0.5s ease-in forwards;
+}
+
+/* Restaura la animación al quitar el hover */
+.carousel-caption-custom:not(.hover-effect) .animate-entrance {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+/* Efecto adicional de brillo */
+.carousel-title {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.carousel-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255,255,255,0.3) 50%,
+    transparent 100%
+  );
+  transition: left 0.8s;
+}
+
+.carousel-caption-custom.hover-effect .carousel-title::after {
+  left: 150%;
+}
+/*-----------------------------------------------*/
+
+.carousel-caption-custom {
+  background: none !important; 
+  padding: 2rem;
+  border-radius: 10px;
+  top: 10% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  transition: all 0.5s ease;
+}
+
+.carousel-caption-custom.hover-effect {
+  background: none !important; 
+  backdrop-filter: blur(0);
+}
+
+.carousel-title {
+  color: #ff4d4d;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  transition: all 0.5s ease;
+}
+
+/* Animación de entrada/salida */
+@keyframes titleEntrance {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes titleExit {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-entrance {
+  animation: titleEntrance 1s ease-out forwards;
+}
+
+.carousel-title.hover {
+  animation: titleExit 0.5s ease-in forwards;
+}
+
+/* Restauración al quitar el hover */
+.carousel-caption-custom:not(.hover-effect) .animate-entrance {
+  animation: titleEntrance 0.5s ease-out forwards;
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  .carousel-caption-custom {
+    top: 5% !important;
+    width: 90%;
+    padding: 1rem;
+  }
+  
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+}
+/*------------------------------------------------------------------*/
+/* Estilo del Footer */
+footer {
+  background-color: #8B0000; /* Rojo oscuro institucional */
+  color: #f1f1f1;
+  transition: background-color 0.3s ease-in-out;
+  padding: 2rem 0;
+}
+
+/* Enlaces del footer */
+footer a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Títulos de las secciones del footer */
+footer h5 {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Línea debajo de los títulos */
+footer h5::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #f1f1f1;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Párrafos y texto */
+footer p,
+footer li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Línea divisoria en el footer */
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+/* Animación de entrada para el footer */
+footer .animate-footer {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  footer h5 {
+    font-size: 1.1rem;
+  }
+  footer p, footer li {
+    font-size: 0.9rem;
   }
 }

@@ -1,0 +1,104 @@
+.sidebar {
+  border-left: 4px solid #ff002b;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+/****************************************************************************/
+.sidebar {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.sidebar h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #800000;
+}
+
+.sidebar strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+.sidebar p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.sidebar form {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
+}
+
+.sidebar input,
+.sidebar label {
+  font-size: 0.95rem;
+}
+
+.sidebar input[type="file"] {
+  padding: 4px;
+}
+
+.sidebar button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+
+/* EmpleosIngenieria.css */
+.btn-aplicar {
+  background-color: red !important;
+  border-color: red !important;
+  color: white !important;
+}
+
+.btn-aplicar:hover {
+  background-color: darkred !important;
+  border-color: darkred !important;
+}
+
+
+
+
