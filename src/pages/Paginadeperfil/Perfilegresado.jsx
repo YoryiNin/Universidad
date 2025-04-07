@@ -1,5 +1,6 @@
 import React from 'react';
 import './Perfilegresado.css';
+
 const Perfilegresado = () => {
   return (
     <div className="perfil-egresado">
@@ -10,7 +11,11 @@ const Perfilegresado = () => {
 
       <section className="hero">
         <div className="hero-overlay">
-          <img src="/images/campuss.png" alt="Imagen de campus" className="hero-img" />
+          <img 
+            src="https://github.com/YoryiNin/Universidad/blob/main/public/images/campuss.PNG?raw=true" 
+            alt="Imagen de campus" 
+            className="hero-img" 
+          />
           <div className="hero-text">
             <h1 className="animated-title">Perfil de los Egresados</h1>
             <p>Explora oportunidades, eventos y beneficios diseñados especialmente para ti.</p>
@@ -23,21 +28,33 @@ const Perfilegresado = () => {
         <h2>¿Cuáles son nuestros beneficios?</h2>
         <div className="feature-list">
           <div className="card">
-            <img src="/images/conexiones.jpg" alt="Conexiones" className="card-img" />
+            <img 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/conexiones.jpg?raw=true" 
+              alt="Conexiones" 
+              className="card-img" 
+            />
             <h3>Conexiones Profesionales</h3>
             <p>
               Reencuéntrate con tus compañeros y amplía tu red profesional.
             </p>
           </div>
           <div className="card">
-            <img src="/images/eventos.jpg" alt="Eventos" className="card-img" />
+            <img 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/eventos.jpg?raw=true" 
+              alt="Eventos" 
+              className="card-img" 
+            />
             <h3>Eventos Exclusivos</h3>
             <p>
               Participa en actividades diseñadas para nuestros exalumnos.
             </p>
           </div>
           <div className="card">
-            <img src="/images/descuentos.jpg" alt="Beneficios" className="card-img" />
+            <img 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/descuentos.jpg?raw=true" 
+              alt="Beneficios" 
+              className="card-img" 
+            />
             <h3>Descuentos y Beneficios</h3>
             <p>
               Accede a ventajas únicas siendo parte de nuestra comunidad.
@@ -74,21 +91,33 @@ const Perfilegresado = () => {
         <h2>Eventos Recientes</h2>
         <div className="gallery-grid">
           <div className="card">
-            <img src="/images/ceremonia.jpg" alt="Ceremonia" className="card-img" />
+            <img 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/ceremonia.jpg?raw=true" 
+              alt="Ceremonia" 
+              className="card-img" 
+            />
             <h3>Ceremonia de Reconocimiento</h3>
             <p>
               Honramos los logros de nuestros egresados más destacados.
             </p>
           </div>
           <div className="card">
-            <img src="/images/feria.jpg" alt="Feria de empleos" className="card-img" />
+            <img 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/feria.jpg?raw=true" 
+              alt="Feria de empleos" 
+              className="card-img" 
+            />
             <h3>Feria de Empleos</h3>
             <p>
               Oportunidades laborales ofrecidas por empresas aliadas.
             </p>
           </div>
           <div className="card">
-            <img src="/images/networking.jpg" alt="Networking" className="card-img" />
+            <img 
+              src="https://github.com/YoryiNin/Universidad/blob/main/public/images/networking.jpg?raw=true" 
+              alt="Networking" 
+              className="card-img" 
+            />
             <h3>Networking Alumni</h3>
             <p>
               Conecta con otros egresados en un ambiente profesional.

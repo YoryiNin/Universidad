@@ -18,7 +18,7 @@ const CustomNavbar = () => {
       <Container fluid>
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img
-            src="/images/logo.png"
+            src="https://github.com/YoryiNin/Universidad/blob/main/public/images/logo.png?raw=true"
             alt="Logo Universidad de Santo Domingo"
             style={{
               height: "80px",
@@ -34,7 +34,6 @@ const CustomNavbar = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            {/* Modificado para que redirija al home */}
             <Nav.Link as={Link} to="/" className="mx-3 fw-medium nav-link-custom">
               La Universidad
             </Nav.Link>
@@ -60,7 +59,6 @@ const CustomNavbar = () => {
                   Perfil de Egresados
                 </Dropdown.Item>
 
-                {/* Submenú Empleos */}
                 <div
                   className="py-3 px-3 hover-red d-flex justify-content-between align-items-center"
                   onMouseEnter={() => setShowSubmenu(true)}

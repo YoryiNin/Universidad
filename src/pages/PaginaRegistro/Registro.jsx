@@ -1,10 +1,12 @@
 import React from 'react';
 import './Registro.css';
+
 const Registro = () => {
   return (
     <div className="registro-container">
       <header>
-        <img src="/images/logo.png" alt="Logo" className="logo" />
+        {/* Actualizando la ruta de la imagen para usar la URL de GitHub */}
+        <img src="https://github.com/YoryiNin/Universidad/blob/main/public/images/campuss.PNG?raw=true" alt="Logo" className="logo" />
         <h1 className="fade-in">Formulario de registro</h1>
       </header>
 
@@ -85,3 +87,4 @@ const Registro = () => {
 };
 
 export default Registro;
+
