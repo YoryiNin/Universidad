@@ -1,10 +1,5 @@
 import React from 'react';
 import './Registro.css';
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
 const Registro = () => {
   return (
     <div className="registro-container">

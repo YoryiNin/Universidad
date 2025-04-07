@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import './EmpleosIngenieria.css';
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
 const empleosData = [
   {
     id: 1,

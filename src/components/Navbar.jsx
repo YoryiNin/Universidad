@@ -2,11 +2,6 @@ import { useState } from 'react';
 import { Navbar, Nav, Dropdown, Container } from 'react-bootstrap';
 import { FiUser } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import React from 'react';
-
-=======
->>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
 
 const CustomNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(null);
