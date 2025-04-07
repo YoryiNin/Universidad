@@ -1,9 +1,5 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './EgresadosDestacados.css';
-<<<<<<< HEAD
-import React from 'react';
-=======
->>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
 
 const EgresadosDestacados = () => {
   const [modoOscuro, setModoOscuro] = useState(false);
@@ -23,7 +19,8 @@ const EgresadosDestacados = () => {
   useEffect(() => {
     const tituloHero = document.querySelector('.hero-content h1');
     const descripcionHero = document.querySelector('.hero-description');
-    
+
+    // Animación para título y descripción
     setTimeout(() => {
       tituloHero.classList.add('active');
       descripcionHero.classList.add('active');
@@ -38,7 +35,6 @@ const EgresadosDestacados = () => {
             <li><a href="/">Egresados Destacados</a></li>
             <li><a href="/postula">Postula a un Egresado</a></li>
             <li><a href="/historias-exito">Historias de Éxito</a></li>
-<<<<<<< HEAD
             <li>
               <button 
                 id="modoOscuroBtn" 
@@ -48,9 +44,6 @@ const EgresadosDestacados = () => {
                 <span role="img" aria-label="Luna para modo oscuro">🌙</span>
               </button>
             </li>
-=======
-            <li><button id="modoOscuroBtn" onClick={toggleModoOscuro}>🌙</button></li>
->>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
           </ul>
         </nav>
       </header>
