@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Universidad/static/css/main.a771d9f9.chunk.css",
+    "main.js": "/Universidad/static/js/main.53f96208.chunk.js",
+    "main.js.map": "/Universidad/static/js/main.53f96208.chunk.js.map",
+    "runtime-main.js": "/Universidad/static/js/runtime-main.3a53b409.js",
+    "runtime-main.js.map": "/Universidad/static/js/runtime-main.3a53b409.js.map",
+    "static/css/2.b0aab389.chunk.css": "/Universidad/static/css/2.b0aab389.chunk.css",
+    "static/js/2.9ffdf070.chunk.js": "/Universidad/static/js/2.9ffdf070.chunk.js",
+    "static/js/2.9ffdf070.chunk.js.map": "/Universidad/static/js/2.9ffdf070.chunk.js.map",
+    "index.html": "/Universidad/index.html",
+    "precache-manifest.7b09a1ed0909c07e3644058ab72b571c.js": "/Universidad/precache-manifest.7b09a1ed0909c07e3644058ab72b571c.js",
+    "service-worker.js": "/Universidad/service-worker.js",
+    "static/css/2.b0aab389.chunk.css.map": "/Universidad/static/css/2.b0aab389.chunk.css.map",
+    "static/css/main.a771d9f9.chunk.css.map": "/Universidad/static/css/main.a771d9f9.chunk.css.map",
+    "static/js/2.9ffdf070.chunk.js.LICENSE.txt": "/Universidad/static/js/2.9ffdf070.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a53b409.js",
+    "static/css/2.b0aab389.chunk.css",
+    "static/js/2.9ffdf070.chunk.js",
+    "static/css/main.a771d9f9.chunk.css",
+    "static/js/main.53f96208.chunk.js"
+  ]
+}
