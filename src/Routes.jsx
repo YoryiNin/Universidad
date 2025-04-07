@@ -4,8 +4,11 @@ import EmpleosIngenieria from './pages/EngineeringJobs/EmpleosIngenieria';
 import EgresadosDestacados from './pages/Paginasegresados/EgresadosDestacados';  // Correcto
 import Registro from './pages/PaginaRegistro/Registro';
 import Perfilegresado from './pages/Paginadeperfil/Perfilegresado';
+<<<<<<< HEAD
 import React from 'react';
 
+=======
+>>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
 
 function AppRoutes() {
   return (

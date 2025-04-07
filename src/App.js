@@ -2,8 +2,11 @@ import { useState } from 'react';
 import { Carousel, Container, Card, Row, Col } from 'react-bootstrap';
 import CustomNavbar from './components/Navbar';
 import './App.css';
+<<<<<<< HEAD
 import React from 'react';
 
+=======
+>>>>>>> 3460c6f7a3d3fba71cee73ff2d77d6456c408773
 // ❌ Evitar importar App dentro de sí mismo
 // import Home from './App'; 
 // ✅ Puedes importar esta página si planeas mostrarla desde un router, pero no aquí directamente
