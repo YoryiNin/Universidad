@@ -20,11 +20,9 @@ function App() {
         <Carousel fade className="mb-5">
           <Carousel.Item interval={3000}>
             <div className="carousel-image-container">
-              <img  
-                className="d-block w-100"
-                src="/images/campuss.png"
-                alt="Campus universitario"
-              />
+    
+           <img src="/Universidad/images/campuss.png" alt="Imagen campus" />
+
               <Carousel.Caption 
                 className={`carousel-caption-custom ${isHovered ? 'hover-effect' : ''}`}
                 onMouseEnter={() => setIsHovered(true)}
